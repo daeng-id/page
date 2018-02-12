@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+body {
+   overflow-y: scroll;
+   background-color: #F6F7FB;
+   font-family: 'Open Sans', sans-serif;
+   color: #FFFFFF;
+   overflow-y: hidden;
+}
+
+p.tick {
+   font-weight: 300;
+}
+
+hr {
+   content: url(../img/separator.png);
+   width: 66px;
+   height: 7px;
+   top: -1px;
+   position: relative;
+   float: left;
+   border: none
+}
+
+a, a:visited {
+   color: #696969;
+}
+
+a:hover {
+   color: #696969;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.designbook {
+   position: absolute;
+   height: 100%;
+   right: 0%;
+   bottom: 0;
+}
+
+@media (max-width: 768px) {
+   .designbook {
+      position: absolute;
+      height: 100%;
+      right: -95%;
+      bottom: 0;
+      opacity: 0.1;
+   }
+}
+
+.navbar {
+   background-color: #F6F7FB;
+   border: 0;
+   height: auto;
+   margin-bottom: 0;
+}
+
+.navbar .navbar-brand {
+   font-size: 25px;
+   padding: 26px 20px;
+   transition: all 0.3s ease-in-out;
+   line-height: normal;
+   color: #696969;
+   cursor: pointer;
+}
+
+.navbar .navbar-brand.overlay-hide {
+   color: #696969;
+   z-index: 320;
+   display: none;
+}
+
+.navbar .navbar-brand.overlay-hide:hover, .navbar .navbar-brand.overlay-hide:focus {
+   color: #696969;
+}
+
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+   color: #696969;
+}
+
+.navbar .navbar-nav>li>a {
+   color: #696969;
+   padding: 30px 20px;
+   font-size: 14px;
+   text-transform: capitalize;
+   transition: all 0.3s ease-in-out;
+   line-height: normal;
+   /* color: rgba(255, 255, 255, 0.4); */
+}
+
+.navbar .navbar-nav>li>a:hover, .navbar .navbar-nav>li>a:focus {
+   color: #F05DA3;
+}
+
+.section {
+   max-width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+@media (max-width: 480px) {
+   .section {
+      padding: 15px;
+   }
+}
+
+.section-inner {
+   position: relative;
+   display: block;
+   max-width: 80%;
+}
+
+@media (max-width: 768px) {
+   .section-inner {
+      max-width: 100%;
+   }
+}
+
+.section-two {
+   background-color: #F6F7FB;
+}
+
+.section-three {
+   background-color: #F6F7FB;
+}
+
+.section-four {
+   background-color: #F6F7FB;
+}
+
+.section-five {
+   background-color: #F6F7FB;
+}
+
+.section:before {
+   content: attr(data-text);
+   position: absolute;
+   bottom: 0;
+   left: 5%;
+   font-family: 'Oswald', sans-serif;
+   font-size: 110px;
+   opacity: .1;
+}
+
+@media (max-width: 768px) {
+   .section:before {
+      content: '';
+   }
+}
+
+.section:after {
+   content: attr(data-sub-text);
+   position: absolute;
+   top: 10%;
+   right: 5%;
+   font-family: 'Oswald', sans-serif;
+   font-size: 80px;
+   opacity: .1;
+}
+
+@media (max-width: 768px) {
+   .section:after {
+      content: '';
+   }
+}
+
+.section .btn {
+   margin-top: 20px;
+   animation-delay: 0.5s;
+   line-height: normal;
+   color: #fff;
+   background-color: #515153;
+}
+
+.section .btn:hover {
+   background-color: #515153;
+   border-color: transparent;
+   color: #fff;
+}
+
+.title {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 13px;
+   color: inherit;
+   letter-spacing: 10px;
+   animation-delay: .2s;
+   margin-bottom: 10px;
+}
+
+.title-sub {
+   font-family: inherit;
+   font-size: 16px;
+   opacity: .4;
+   margin-top: 10px;
+   animation-delay: .6s;
+}
+
+@media (max-width: 480px) {
+   .title {
+      font-size: 13px;
+      letter-spacing: 10px;
+   }
+}
+
+.btn {
+   padding: 18px 40px;
+   font-size: 12px;
+   border-radius: 30px;
+   color: #FFFFFF;
+   line-height: normal;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.btn:hover {
+   box-shadow: 0 19px 38px rgba(0,0,0,0.25), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.navigator {
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+   display: block;
+}
+
+.navigator-up, .navigator-down {
+   text-decoration: none;
+   color: inherit;
+   font-size: 16px;
+   display: block;
+   position: relative;
+}
+
+@media (max-width: 768px) {
+   .navigator-up, .navigator-down {
+      width: 50%;
+      float: left;
+      background-color: #000;
+      padding: 8px;
+      text-align: center;
+      color: #abd00e;
+   }
+}
+
+@media (max-width: 768px) {
+   .navigator {
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      display: inline-block;
+      right: auto;
+      top: auto;
+   }
+}
+
+.overlay {
+   width: 100%;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   background-color: #F6F7FB;
+   opacity: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.4s ease-in-out;
+}
+
+.overlay-active {
+   z-index: 300;
+   opacity: 1;
+}
+
+.overlay-inner {
+   position: relative;
+   display: block;
+   text-align: center;
+}
+
+.overlay-inner .title {
+   color: #696969;
+   margin-bottom: 40px;
+}
+
+.overlay .overlay-inner .nav-pill li a {
+   font-size: 24px;
+   color: rgba(52, 152, 219, 0.6);
+   padding: 14px 0;
+}
+
+.overlay .overlay-inner .nav-pill li a:hover, .overlay .overlay-inner .nav-pill li a:focus {
+   background-color: transparent;
+   color: #3498db;
+}
+
+.modal.fade {
+   opacity: 1;
+}
+
+.modal.fade .modal-dialog {
+   -webkit-transform: translate(0);
+   -moz-transform: translate(0);
+   transform: translate(0);
+}
+
+.modal.modal-fullscreen .modal-dialog {
+   width: 95vw;
+   margin: 0;
+   margin-left: 5vw;
+   min-height: 100vh;
+}
+
+.modal.modal-fullscreen .modal-dialog .modal-content {
+   border-radius: 0;
+   border: 0;
+   box-shadow: none;
+   min-height: 100vh;
+   color: #525252;
+   position: relative;
+}
+
+.modal.modal-fullscreen .modal-dialog .modal-header {
+   border: 0;
+}
+
+.modal.modal-fullscreen .modal-dialog .modal-body {
+   padding: 100px;
+   min-height: calc(100vh - 110px);
+}
+
+.modal.modal-fullscreen .modal-dialog .modal-body:before {
+   content: '<- Close';
+   position: absolute;
+   bottom: 20px;
+   left: 20px;
+}
+
+.modal.modal-fullscreen .modal-dialog .modal-body:after {
+   content: '';
+   background-image: url(../img/photo.jpg);
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   bottom: 40px;
+   right: 60px;
+}
+
+.modal.modal-fullscreen .modal-dialog .title {
+   font-family: 'Quicksand', sans-serif;
+   font-size: 36px;
+   margin-bottom: 20px;
+}
+
+.modal-backdrop {
+   background-color: #3498db;
+}
+
+.modal-backdrop.in {
+   opacity: 1;
+}
+
+
+/*# sourceMappingURL=style.css.map */
