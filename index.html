@@ -34,6 +34,8 @@
 
    <!-- Import Custom Style -->
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -147,12 +149,57 @@
       </div>
    </div>
 
-   <div id="develop" class="section section-four" data-text="DESIGN" data-sub-text="4">
-      <img src="img/background-stars.png" alt="daeng" style="position: absolute; height: 50%; left: 0%; top: 0;">
+   <div id="develop" class="section section-four" data-text="PORTFOLIO" data-sub-text="4">
+      <img src="img/background-dots.png" alt="daeng" style="position: absolute; height: 50%; right: 0%; bottom: 0;">
       <div class="section-inner">
-         <div class="title fadeInDown">Clean Design</div>
-         <p>View my latest shot & design on Pinterest</p>
-         <a href="#" class="btn btn-default animated fadeInDown" target="_blank">View Detail</a>
+         <div class="title fadeInDown" style="color: #696969; ">our awesome!</div>
+         <div class="owl-carousel owl-theme">
+             <div class="item" style="padding: 16px;">
+                <div class="card" style="background-color: #fff; color: #696969">
+                  <img src="img/portfolio/1.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h6> <b>trekkonhajj</b> </h6>
+                    <p class="tick"><a href="http://1945.id">1945.id</a></p>
+                  </div>
+                </div>
+             </div>
+             <div class="item" style="padding: 16px;">
+                <div class="card" style="background-color: #fff; color: #696969">
+                  <img src="img/portfolio/2.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                     <h6> <b>rangers</b> </h6>
+                     <p class="tick"><a href="https://rangers.my">rangers.my</a></p>
+                  </div>
+                </div>
+             </div>
+             <div class="item" style="padding: 16px;">
+                <div class="card" style="background-color: #fff; color: #696969">
+                  <img src="img/portfolio/3.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                     <h6> <b>weblocker</b> </h6>
+                     <p class="tick"><a href="https://weblocker.daeng.id/">weblocker.daeng.id</a></p>
+                  </div>
+                </div>
+             </div>
+             <div class="item" style="padding: 16px;">
+                <div class="card" style="background-color: #fff; color: #696969">
+                  <img src="img/portfolio/4.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                     <h6> <b>halalin.asia</b> </h6>
+                     <p class="tick"><a href="http://halalin.asia/">halalin.asia</a></p>
+                  </div>
+                </div>
+             </div>
+             <div class="item" style="padding: 16px;">
+                <div class="card" style="background-color: #fff; color: #696969">
+                  <img src="img/portfolio/5.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h6> <b>indosat 4G</b> </h6>
+                    <p class="tick"><a href="https://indosatooredoo.com/id/personal">indosatooredoo.com</a></p>
+                  </div>
+                </div>
+             </div>
+         </div>
       </div>
    </div>
 
@@ -188,6 +235,7 @@
    <!-- Import Vendor Script -->
    <script type="text/javascript" src="js/jquery.min.js"></script>
    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 
    <!-- Import Custom Script -->
    <script type="text/javascript" src="js/script.js"></script>
@@ -198,6 +246,22 @@
       gtag('js', new Date());
       gtag('config', 'UA-89521321-2');
 
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:5
+              }
+          }
+      })
       // var top1 = $('#home').offset().top;
       // var top2 = $('#portfolio').offset().top;
       // var top3 = $('#design').offset().top;
