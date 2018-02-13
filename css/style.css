@@ -56,6 +56,9 @@ a:hover {
       bottom: 0;
       opacity: 0.1;
    }
+   .navbar {
+      padding-bottom: 30px;
+   }
 }
 
 .navbar {
@@ -63,6 +66,7 @@ a:hover {
    border: 0;
    height: auto;
    margin-bottom: 0;
+   -webkit-transition: background-color 500ms linear;
 }
 
 .navbar .navbar-brand {
@@ -85,7 +89,7 @@ a:hover {
 }
 
 .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
-   color: #696969;
+   color: #747475;
 }
 
 .navbar .navbar-nav>li>a {
@@ -150,7 +154,7 @@ a:hover {
    position: absolute;
    bottom: 0;
    left: 5%;
-   font-family: 'Oswald', sans-serif;
+   font-family: 'Open Sans', sans-serif;
    font-size: 110px;
    opacity: .1;
 }
@@ -166,7 +170,7 @@ a:hover {
    position: absolute;
    top: 10%;
    right: 5%;
-   font-family: 'Oswald', sans-serif;
+   font-family: 'Open Sans', sans-serif;
    font-size: 80px;
    opacity: .1;
 }
@@ -360,7 +364,7 @@ a:hover {
 }
 
 .modal.modal-fullscreen .modal-dialog .title {
-   font-family: 'Quicksand', sans-serif;
+   font-family: 'Open Sans', sans-serif;
    font-size: 36px;
    margin-bottom: 20px;
 }

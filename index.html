@@ -34,12 +34,10 @@
 
    <!-- Import Custom Style -->
    <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/glide.core.css">
-   <link rel="stylesheet" href="css/glide.theme.css">
 </head>
 
 <body>
-   <div class="navbar navbar-default navbar-fixed-top animated fadeInDown">
+   <div class="navbar navbar-default navbar-fixed-top animated fadeInDown" id="navbar">
       <div class="container">
          <div class="navbar-header">
             <div class="navbar-brand overlay-show">
@@ -51,7 +49,7 @@
          </div>
          <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
             <li><a href="#" class="anchor-button" data-target="#home">Home</a></li>
-            <li><a href="#" class="anchor-button" data-target="#portfolio">Portfolio</a></li>
+            <li><a href="#" class="anchor-button" data-target="#portfolio">Work</a></li>
             <li><a href="#" class="anchor-button" data-target="#design">Design</a></li>
             <li><a href="#" class="anchor-button" data-target="#develop">Life Style</a></li>
             <li><a href="#" class="anchor-button" data-target="#contact">Contact</a></li>
@@ -63,9 +61,9 @@
       <div class="overlay-inner">
          <div class="title">@daeng.id</div>
          <ul class="nav nav-pill">
-            <li><a href="#" target="_blank" class="item fadeInUp">agency</a></li>
-            <li><a href="#" target="_blank" class="item fadeInUp">experience</a></li>
-            <li><a href="#" target="_blank" class="item fadeInUp">about us</a></li>
+            <li><a href="#" class="item fadeInUp">agency</a></li>
+            <li><a href="#" class="item fadeInUp">experience</a></li>
+            <li><a href="#" class="item fadeInUp">about us</a></li>
          </ul>
       </div>
    </div>
@@ -83,10 +81,9 @@
                   <br><br>
                   <div class="title-sub animated fadeInUp">
                      <p class="tick" align="left" style="color: #727272">
-                        web and mobile developer.
+                        <b>web</b> and <b>mobile</b> developer.
                         <br>
                         we focus on applying the right target technology,
-                        <br>
                         based on need and efficiency.
                      </p>
                   </div>
@@ -102,39 +99,31 @@
    <div id="portfolio" class="section section-two" data-text="PROJECT" data-sub-text="2">
       <img src="img/bottom.png" alt="daeng" style="position: absolute; height: 80%; right: 10%; top: 0;">
       <div class="section-inner">
-         <div class="title fadeInDown">portfolio</div>
-         <div class="module module--horizontal">
-            <div id="Carousel" class="glide">
-               <div class="glide__arrows">
-                  <button class="glide__arrow prev" data-glide-dir="<">prev</button>
-                  <button class="glide__arrow next" data-glide-dir=">">next</button>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="animated fadeInDown">
+                     <img src="img/deploytools.png" class="img-responsive" style="width: 100%;" alt="">
+                     <img src="img/designtools.png" class="img-responsive" style="width: 100%;" alt="">
+                  </div>
+                  <hr class="animated fadeInDown">
+                  <br><br>
+                  <div class="title-sub animated fadeInUp">
+                     <p class="tick" align="left" style="color: #727272">
+                        make it <b>real</b> what you imagine with a blend of colors and professional shapes, and also leave an <b>impression</b>.
+                        <br>
+                        whatever you need, we will merge <b>creative</b> and <b>techniques</b> to make it happen.
+                     </p>
+                  </div>
                </div>
-               <div class="glide__wrapper">
-                  <ul class="glide__track">
-                     <li class="glide__slide" data-glide-autoplay="1000">
-                        <div class="col-md-3">
-                          <a href="#" class="thumbnail">
-                            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTYxOGI4NmQzMDcgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNjE4Yjg2ZDMwNyI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI1OS41NTQ2ODc1IiB5PSI5NC41Ij4xNzF4MTgwPC90ZXh0PjwvZz48L2c+PC9zdmc+">
-                          </a>
-                        </div>
-                     </li>
-                     <li class="glide__slide" data-glide-autoplay="3000">
-                        <div class="box" style="background-color: #FBCB43;">2</div>
-                     </li>
-                     <li class="glide__slide" data-glide-autoplay="5000">
-                        <div class="box" style="background-color: #34B67A;">3</div>
-                     </li>
-                  </ul>
-               </div>
-               <div class="glide__bullets"></div>
+               <div class="col-md-6"></div>
             </div>
          </div>
-         <a href="https://github.com/muhibbudins" class="btn btn-default animated fadeInDown" target="_blank">View Detail</a>
       </div>
    </div>
 
    <div id="design" class="section section-three" data-text="ARTICLE" data-sub-text="3">
-      <!-- <img src="img/design.png" alt="daeng" class="designbook"> -->
+      <img src="img/background-dots.png" alt="daeng" style="position: absolute; height: 50%; left: 0%; top: 0;">
       <div class="section-inner">
          <div class="row">
             <div class="col-md-6">
@@ -159,10 +148,11 @@
    </div>
 
    <div id="develop" class="section section-four" data-text="DESIGN" data-sub-text="4">
+      <img src="img/background-stars.png" alt="daeng" style="position: absolute; height: 50%; left: 0%; top: 0;">
       <div class="section-inner">
          <div class="title fadeInDown">Clean Design</div>
          <p>View my latest shot & design on Pinterest</p>
-         <a href="https://id.pinterest.com/msuretno/portofolio-in-design" class="btn btn-default animated fadeInDown" target="_blank">View Detail</a>
+         <a href="#" class="btn btn-default animated fadeInDown" target="_blank">View Detail</a>
       </div>
    </div>
 
@@ -186,14 +176,10 @@
             </div>
             <div class="modal-body">
                <div class="title">Let Me Introduce MySelf</div>
-               <p>Hi There, Welcome to my github pages.</p>
-               <p>My name Eno or full name Muhibbudin Suretno, i have around 4 years experience on web development. Starter as Fullstack developer on some software house at near Jakarta. And then because i ♥ design on Jan 2017 i try to focus to be Frontend Developer.</p>
-               <p>Until now, i have so much project with license MIT and many design to be a referrence for another web designer around the world.</p>
-               <p><br></p>
                <p>Thank you very much! Stay Happy! Stay Code.</p>
             </div>
             <div class="modal-footer">
-               Build with ♥ by <b>Muhibbudin Suretno</b>
+               Build with ♥ by <b>ganteng</b>
             </div>
          </div>
       </div>
@@ -201,34 +187,31 @@
 
    <!-- Import Vendor Script -->
    <script type="text/javascript" src="js/jquery.min.js"></script>
-   <script type="text/javascript" src="js/glide.js"></script>
    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
    <!-- Import Custom Script -->
    <script type="text/javascript" src="js/script.js"></script>
 
    <script>
-      var carousel = $('#Carousel').glide({
-         type: 'carousel',
-         startAt: 1,
-         touchDistance: 2
-      });
-      var slider = $('#Slider').glide({
-         type: 'slider',
-         startAt: 2
-      });
-      var slideshow = $('#Slideshow').glide({
-         type: 'slideshow',
-         startAt: 3
-      });
-   </script>
-
-   <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-89521321-2');
+
+      // var top1 = $('#home').offset().top;
+      // var top2 = $('#portfolio').offset().top;
+      // var top3 = $('#design').offset().top;
+      //
+      // $(document).scroll(function() {
+      //   var scrollPos = $(document).scrollTop();
+      //   if (scrollPos >= top1 && scrollPos < top2) {
+      //     $('#navbar').css('background-color', '#F6F7FB');
+      //   } else if (scrollPos >= top2 && scrollPos < top3) {
+      //     $('#navbar').css('background-color', '#F6F7FB');
+      //   } else if (scrollPos >= top3) {
+      //     $('#navbar').css('background-color', '#696969');
+      //   }
+      // });
    </script>
 </body>
 </html>
