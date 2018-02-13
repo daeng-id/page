@@ -48,7 +48,7 @@ $(document).ready(function() {
 
     // Navigator
     function navigate() {
-	    var page = ["#home",'#portfolio','#design','#develop','#contact'],
+	    var page = ["#home",'#work','#design','#develop','#contact'],
 	    	href = window.location.href.substr(loc, 100),
 	    	loc  = href.indexOf('#'),
 	    	get  = href.substr(loc, 100),
