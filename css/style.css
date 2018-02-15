@@ -12,6 +12,39 @@ p.tick {
    font-weight: 300;
 }
 
+.Container {
+    height: 100%;
+}
+
+.Container:before {
+   content: '';
+   height: 100%;
+   float: left;
+}
+
+.First {
+   background-color: #bf5b5b;
+}
+
+.Second {
+   position: relative;
+   z-index: 1;
+   background-color: #6ea364;
+}
+
+.Second:after {
+   content: '';
+   clear: both;
+   display: block;
+}
+
+.Content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
 hr {
    content: url(../img/separator.png);
    width: 66px;
