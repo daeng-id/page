@@ -6,7 +6,7 @@ body {
 	background-color: $background;
 	font-family: 'Quicksand', sans-serif;
 	color: #FFFFFF;
-	
+	overflow-y: hidden;
 }
 
 a,
@@ -31,7 +31,7 @@ a:hover {
 		line-height: normal;
 		color: transparentize(#FFFFFF, 0.6);
 		cursor: pointer;
-		
+
 		&.overlay-hide {
 			color: $background;
 			z-index: 320;
@@ -246,7 +246,7 @@ a:hover {
 
 .modal.fade{
 	opacity:1;
-	
+
 	.modal-dialog {
 		-webkit-transform: translate(0);
 		-moz-transform: translate(0);
